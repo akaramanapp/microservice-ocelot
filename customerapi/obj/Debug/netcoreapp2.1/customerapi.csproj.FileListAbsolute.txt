@@ -1,0 +1,14 @@
+/Users/akaraman/MyProjects/netmicroservice/customerapi/bin/Debug/netcoreapp2.1/customerapi.deps.json
+/Users/akaraman/MyProjects/netmicroservice/customerapi/bin/Debug/netcoreapp2.1/customerapi.runtimeconfig.json
+/Users/akaraman/MyProjects/netmicroservice/customerapi/bin/Debug/netcoreapp2.1/customerapi.runtimeconfig.dev.json
+/Users/akaraman/MyProjects/netmicroservice/customerapi/bin/Debug/netcoreapp2.1/customerapi.dll
+/Users/akaraman/MyProjects/netmicroservice/customerapi/bin/Debug/netcoreapp2.1/customerapi.pdb
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.csprojAssemblyReference.cache
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.csproj.CoreCompileInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.RazorAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.RazorAssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.AssemblyInfoInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.AssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.RazorTargetAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.dll
+/Users/akaraman/MyProjects/netmicroservice/customerapi/obj/Debug/netcoreapp2.1/customerapi.pdb

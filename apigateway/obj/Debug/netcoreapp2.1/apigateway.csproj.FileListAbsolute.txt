@@ -1,0 +1,14 @@
+/Users/akaraman/MyProjects/netmicroservice/apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
+/Users/akaraman/MyProjects/netmicroservice/apigateway/bin/Debug/netcoreapp2.1/apigateway.runtimeconfig.json
+/Users/akaraman/MyProjects/netmicroservice/apigateway/bin/Debug/netcoreapp2.1/apigateway.runtimeconfig.dev.json
+/Users/akaraman/MyProjects/netmicroservice/apigateway/bin/Debug/netcoreapp2.1/apigateway.dll
+/Users/akaraman/MyProjects/netmicroservice/apigateway/bin/Debug/netcoreapp2.1/apigateway.pdb
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.csprojAssemblyReference.cache
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.csproj.CoreCompileInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.RazorAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.RazorAssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.AssemblyInfoInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.AssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.RazorTargetAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.dll
+/Users/akaraman/MyProjects/netmicroservice/apigateway/obj/Debug/netcoreapp2.1/apigateway.pdb

@@ -1,0 +1,14 @@
+/Users/akaraman/MyProjects/netmicroservice/productapi/bin/Debug/netcoreapp2.1/productapi.deps.json
+/Users/akaraman/MyProjects/netmicroservice/productapi/bin/Debug/netcoreapp2.1/productapi.runtimeconfig.json
+/Users/akaraman/MyProjects/netmicroservice/productapi/bin/Debug/netcoreapp2.1/productapi.runtimeconfig.dev.json
+/Users/akaraman/MyProjects/netmicroservice/productapi/bin/Debug/netcoreapp2.1/productapi.dll
+/Users/akaraman/MyProjects/netmicroservice/productapi/bin/Debug/netcoreapp2.1/productapi.pdb
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.csprojAssemblyReference.cache
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.csproj.CoreCompileInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.RazorAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.RazorAssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.AssemblyInfoInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.AssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.RazorTargetAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.dll
+/Users/akaraman/MyProjects/netmicroservice/productapi/obj/Debug/netcoreapp2.1/productapi.pdb

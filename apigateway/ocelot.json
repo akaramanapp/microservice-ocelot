@@ -1,0 +1,29 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/api/customer",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 7001
+                    }
+                ],
+            "UpstreamPathTemplate": "/customer-service/customer"
+        },
+        {
+            "DownstreamPathTemplate": "/api/product",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 7002
+                    }
+                ],
+            "UpstreamPathTemplate": "/product-service/product"
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:7000"
+    }
+}
