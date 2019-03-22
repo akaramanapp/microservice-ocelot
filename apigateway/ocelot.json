@@ -1,7 +1,7 @@
 {
     "ReRoutes": [
         {
-            "DownstreamPathTemplate": "/api/customer",
+            "DownstreamPathTemplate": "/api/{everything}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                     {
@@ -9,10 +9,10 @@
                         "Port": 7001
                     }
                 ],
-            "UpstreamPathTemplate": "/customer-service/customer"
+            "UpstreamPathTemplate": "/customer-service/{everything}"
         },
         {
-            "DownstreamPathTemplate": "/api/product",
+            "DownstreamPathTemplate": "/api/{everything}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                     {
@@ -20,7 +20,7 @@
                         "Port": 7002
                     }
                 ],
-            "UpstreamPathTemplate": "/product-service/product"
+            "UpstreamPathTemplate": "/product-service/{everything}"
         }
     ],
     "GlobalConfiguration": {
