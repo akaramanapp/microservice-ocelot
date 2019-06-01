@@ -1,0 +1,14 @@
+/Users/akaraman/MyProjects/netmicroservice/authserver/bin/Debug/netcoreapp2.1/netmicroservice.deps.json
+/Users/akaraman/MyProjects/netmicroservice/authserver/bin/Debug/netcoreapp2.1/netmicroservice.runtimeconfig.json
+/Users/akaraman/MyProjects/netmicroservice/authserver/bin/Debug/netcoreapp2.1/netmicroservice.runtimeconfig.dev.json
+/Users/akaraman/MyProjects/netmicroservice/authserver/bin/Debug/netcoreapp2.1/netmicroservice.dll
+/Users/akaraman/MyProjects/netmicroservice/authserver/bin/Debug/netcoreapp2.1/netmicroservice.pdb
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.csprojAssemblyReference.cache
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.csproj.CoreCompileInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.RazorAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.RazorAssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.AssemblyInfoInputs.cache
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.AssemblyInfo.cs
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.RazorTargetAssemblyInfo.cache
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.dll
+/Users/akaraman/MyProjects/netmicroservice/authserver/obj/Debug/netcoreapp2.1/netmicroservice.pdb

@@ -1,7 +1,5 @@
 {
-  "ProjectFilePath": "/Users/akaraman/MyProjects/netmicroservice/apigateway/apigateway.csproj",
-  "TargetFramework": "netcoreapp2.1",
-  "TagHelpers": [],
+  "FilePath": "/Users/akaraman/MyProjects/netmicroservice/apigateway/apigateway.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -10,5 +8,8 @@
         "ExtensionName": "MVC-2.1"
       }
     ]
-  }
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "apigateway",
+  "Documents": []
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace productapi.Controllers
@@ -12,6 +13,7 @@ namespace productapi.Controllers
     {
         // GET api/product
         [HttpGet]
+        [Authorize]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "Product 1", "Product 2" };

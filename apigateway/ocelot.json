@@ -1,15 +1,22 @@
 {
     "ReRoutes": [
         {
-            "DownstreamPathTemplate": "/api/{everything}",
-            "DownstreamScheme": "http",
+            "DownstreamPathTemplate": "/api/{everything}",  
+            "DownstreamScheme": "http",  
+            "DownstreamHost": "localhost",  
+            "DownstreamPort": 9001,  
+            "UpstreamPathTemplate": "/customer-service/{everything}",  
+            "UpstreamHttpMethod": [ "Get" ],  
+            "AuthenticationOptions": {  
+                "AuthenticationProviderKey": "TestKey",  
+                "AllowedScopes": []  
+            },
             "DownstreamHostAndPorts": [
                     {
                         "Host": "localhost",
                         "Port": 7001
                     }
-                ],
-            "UpstreamPathTemplate": "/customer-service/{everything}"
+                ]
         },
         {
             "DownstreamPathTemplate": "/api/{everything}",

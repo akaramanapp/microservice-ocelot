@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace customerapi.Controllers
@@ -10,7 +11,8 @@ namespace customerapi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        // GET api/values
+        // GET api/Customer
+        [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {

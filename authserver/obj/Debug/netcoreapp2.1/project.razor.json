@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/akaraman/MyProjects/netmicroservice/productapi/productapi.csproj",
+  "FilePath": "/Users/akaraman/MyProjects/netmicroservice/authserver/netmicroservice.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -10,6 +10,6 @@
     ]
   },
   "ProjectWorkspaceState": null,
-  "RootNamespace": "productapi",
+  "RootNamespace": "netmicroservice",
   "Documents": []
 }
