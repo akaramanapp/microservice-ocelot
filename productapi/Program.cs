@@ -19,7 +19,6 @@ namespace productapi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://localhost:7002/")  
                 .UseStartup<Startup>();
     }
 }

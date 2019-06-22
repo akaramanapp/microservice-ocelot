@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  eurekaservice:
+    image: eurekaservice
+    hostname: "eurekaservice"
+    ports:
+      - "8761:8761"
+  apigateway:
+    image: apigateway
+    links: 
+      - customer-service
+      - eurekaservice
+    ports:
+      - "7000:7000"
+  customer-service:
+    image: customerapi
+    links:
+      - eurekaservice
+    ports:
+      - "7001:7001"
+  product-service:
+    image: productapi
+    links:
+      - eurekaservice
+    ports:
+      - "7002:7002"

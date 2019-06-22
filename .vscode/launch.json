@@ -67,6 +67,16 @@
             "type": "coreclr",
             "request": "attach",
             "processId": "${command:pickProcess}"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServiceProjectApplication<EurekaServiceProject>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.eurekaservice.EurekaServiceProject.EurekaServiceProjectApplication",
+            "projectName": "EurekaServiceProject",
+            "args": ""
         }
     ]
 }

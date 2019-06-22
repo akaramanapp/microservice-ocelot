@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Steeltoe.Discovery.Client;
 
 namespace customerapi
 {
@@ -54,7 +55,7 @@ namespace customerapi
                          x.RequireHttpsMetadata = false;
                          x.TokenValidationParameters = tokenValidationParameters;
                      });
-
+            services.AddDiscoveryClient(Configuration);
             services.AddMvc();
         }
 
@@ -71,6 +72,7 @@ namespace customerapi
             }
 
             app.UseAuthentication();
+            app.UseDiscoveryClient();
             app.UseMvc();
         }
     }

@@ -2,35 +2,33 @@
     "ReRoutes": [
         {
             "DownstreamPathTemplate": "/api/{everything}",  
-            "DownstreamScheme": "http",  
-            "DownstreamHost": "localhost",  
-            "DownstreamPort": 9001,  
+            "DownstreamScheme": "http",
+            "UseServiceDiscovery": true,  
+            "ServiceName": "customer-service",
             "UpstreamPathTemplate": "/customer-service/{everything}",  
             "UpstreamHttpMethod": [ "Get" ],  
             "AuthenticationOptions": {  
                 "AuthenticationProviderKey": "TestKey",  
                 "AllowedScopes": []  
-            },
-            "DownstreamHostAndPorts": [
-                    {
-                        "Host": "localhost",
-                        "Port": 7001
-                    }
-                ]
+            }
         },
         {
             "DownstreamPathTemplate": "/api/{everything}",
             "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-                    {
-                        "Host": "localhost",
-                        "Port": 7002
-                    }
-                ],
-            "UpstreamPathTemplate": "/product-service/{everything}"
+            "UseServiceDiscovery": true,
+            "ServiceName": "product-service",
+            "UpstreamPathTemplate": "/product-service/{everything}",
+            "UpstreamHttpMethod": [ "Get" ],   
+            "AuthenticationOptions": {  
+                "AuthenticationProviderKey": "TestKey",  
+                "AllowedScopes": []  
+            }
         }
     ],
     "GlobalConfiguration": {
-        "BaseUrl": "http://localhost:7000"
+        "ServiceDiscoveryProvider": {
+            "Type": "Eureka"
+        },
+        "BaseUrl": "http://192.168.1.144:7000"
     }
 }
