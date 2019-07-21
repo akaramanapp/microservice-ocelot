@@ -10,7 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-     <PackageReference Include="Steeltoe.Discovery.ClientCore" Version= "2.1.0"/>
+    <PackageReference Include="Steeltoe.Discovery.ClientCore" Version= "2.1.0"/>
+    <PackageReference Include="WebApiClient.JIT" Version="0.1.8" />
   </ItemGroup>
 
 </Project>

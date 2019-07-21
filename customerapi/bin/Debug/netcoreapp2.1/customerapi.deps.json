@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0580a70a9fed3fbc56f6b88865e83af62eaacd50"
+    "signature": "01b9baebc01c32a80433675607480a8d781a7a18"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "Steeltoe.Discovery.ClientCore": "2.1.0"
+          "Steeltoe.Discovery.ClientCore": "2.1.0",
+          "WebApiClient.JIT": "0.1.8"
         },
         "runtime": {
           "customerapi.dll": {}
@@ -411,6 +412,20 @@
           "Microsoft.NETCore.Targets": "2.1.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
+        }
+      },
+      "WebApiClient.JIT/0.1.8": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/WebApiClient.JIT.dll": {
+            "assemblyVersion": "0.1.8.0",
+            "fileVersion": "0.1.8.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/WebApiClient.JIT.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3446,6 +3461,13 @@
       "sha512": "sha512-r3CyrJq7+vQjj9Egne71uEWjO4LZXMH9YXHaDzTHN/+vpBTt4yH+IJWQ3kUsnidYIwhfWMI5z75JEOeGlqh55w==",
       "path": "system.net.primitives/4.3.0",
       "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
+    },
+    "WebApiClient.JIT/0.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kqf0K4mdEIRSLqtjMg1c766DaY6lAp/zRdAIKh3sCry7krH+rEtsaKUW2bNRMyq5wu0RZ0oxtkvKLNzgx1yM+A==",
+      "path": "webapiclient.jit/0.1.8",
+      "hashPath": "webapiclient.jit.0.1.8.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

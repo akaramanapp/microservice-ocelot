@@ -11,5 +11,6 @@
   },
   "ProjectWorkspaceState": null,
   "RootNamespace": "productapi",
-  "Documents": []
+  "Documents": [],
+  "SerializationFormat": "0.1"
 }

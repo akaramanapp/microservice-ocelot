@@ -11,5 +11,6 @@
   },
   "ProjectWorkspaceState": null,
   "RootNamespace": "netmicroservice",
-  "Documents": []
+  "Documents": [],
+  "SerializationFormat": "0.1"
 }

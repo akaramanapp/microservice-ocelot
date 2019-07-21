@@ -39,7 +39,7 @@ namespace netmicroservice.Controllers
                     ValidateIssuer = true,
                     ValidIssuer = "localhost",
                     ValidateAudience = true,
-                    ValidAudience = "Catcher Wong",
+                    ValidAudience = "Abdulkerim Karaman",
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.Zero,
                     RequireExpirationTime = true,
@@ -48,17 +48,17 @@ namespace netmicroservice.Controllers
 
                 var jwt = new JwtSecurityToken(
                     issuer: "localhost",
-                    audience: "Catcher Wong",
+                    audience: "Abdulkerim Karaman",
                     claims: claims,
                     notBefore: now,
-                    expires: now.Add(TimeSpan.FromMinutes(2)),
+                    expires: now.Add(TimeSpan.FromMinutes(500)),
                     signingCredentials: new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
                 );
                 var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
                 var responseJson = new
                 {
                     access_token = encodedJwt,
-                    expires_in = (int)TimeSpan.FromMinutes(2).TotalSeconds
+                    expires_in = (int)TimeSpan.FromMinutes(5000).TotalSeconds
                 };
 
                 return Json(responseJson);

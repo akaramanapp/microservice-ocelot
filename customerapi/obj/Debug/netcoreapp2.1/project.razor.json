@@ -11,5 +11,6 @@
   },
   "ProjectWorkspaceState": null,
   "RootNamespace": "customerapi",
-  "Documents": []
+  "Documents": [],
+  "SerializationFormat": "0.1"
 }

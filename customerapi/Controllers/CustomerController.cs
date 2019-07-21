@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +9,18 @@ namespace customerapi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
+        private readonly IUserApiClient _api;
+
+        public CustomerController(IUserApiClient api)
+        {
+            this._api = api;
+        }
         // GET api/Customer
         [Authorize]
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<List<User>> GetAsync()
         {
-            return new string[] { "Customer 1", "Customer 2" };
+            return await _api.GetUsersAsync();
         }
 
         // GET api/values/5

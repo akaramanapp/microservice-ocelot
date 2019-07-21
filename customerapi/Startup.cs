@@ -28,6 +28,10 @@ namespace customerapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpApiClient<IUserApiClient>(config =>
+            {
+                config.HttpHost = new System.Uri(Configuration.GetValue<string>("user_service_url"));
+            });
             var audienceConfig = Configuration.GetSection("Audience");
 
             var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(audienceConfig["Secret"]));

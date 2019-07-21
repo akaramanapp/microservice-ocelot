@@ -36,3 +36,4 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 apigateway/obj/Debug
+apigateway/bin

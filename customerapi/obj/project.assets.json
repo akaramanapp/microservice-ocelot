@@ -4390,6 +4390,18 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "WebApiClient.JIT/0.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/WebApiClient.JIT.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/WebApiClient.JIT.dll": {}
+        }
       }
     }
   },
@@ -11566,13 +11578,30 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "WebApiClient.JIT/0.1.8": {
+      "sha512": "Kqf0K4mdEIRSLqtjMg1c766DaY6lAp/zRdAIKh3sCry7krH+rEtsaKUW2bNRMyq5wu0RZ0oxtkvKLNzgx1yM+A==",
+      "type": "package",
+      "path": "webapiclient.jit/0.1.8",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/WebApiClient.JIT.dll",
+        "lib/net45/WebApiClient.JIT.xml",
+        "lib/netcoreapp2.1/WebApiClient.JIT.dll",
+        "lib/netcoreapp2.1/WebApiClient.JIT.xml",
+        "lib/netstandard1.3/WebApiClient.JIT.dll",
+        "lib/netstandard1.3/WebApiClient.JIT.xml",
+        "webapiclient.jit.0.1.8.nupkg.sha512",
+        "webapiclient.jit.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Steeltoe.Discovery.ClientCore >= 2.1.0"
+      "Steeltoe.Discovery.ClientCore >= 2.1.0",
+      "WebApiClient.JIT >= 0.1.8"
     ]
   },
   "packageFolders": {
@@ -11628,6 +11657,10 @@
           "Steeltoe.Discovery.ClientCore": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "WebApiClient.JIT": {
+            "target": "Package",
+            "version": "[0.1.8, )"
           }
         },
         "imports": [
