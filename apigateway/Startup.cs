@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using NLog.Extensions.Logging;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Eureka;
@@ -45,7 +46,7 @@ namespace apigateway
                 ClockSkew = TimeSpan.Zero,
                 RequireExpirationTime = true,
             };
-                        
+
             services.AddAuthentication(o =>
             {
                 o.DefaultAuthenticateScheme = "TestKey";
@@ -63,7 +64,8 @@ namespace apigateway
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public async void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        [Obsolete]
+        public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -74,9 +76,25 @@ namespace apigateway
                 app.UseHsts();
             }
 
-            app.UseAuthentication();
+            // -- Loging
+            loggerFactory.AddNLog();  
+            loggerFactory.ConfigureNLog("nlog.config"); 
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));  
+            app.UseOcelot().Wait();
+            // -- Loging 
+
+            var configuration = new OcelotPipelineConfiguration
+            {
+                PreQueryStringBuilderMiddleware = async (ctx, next) =>
+                {
+                    await next.Invoke();
+                }
+            };
+
+
+            app.UseAuthentication(); // auth
             app.UseMvc();
-            await app.UseOcelot();
+            await app.UseOcelot(configuration);
         }
     }
 }
