@@ -26,7 +26,7 @@ namespace customerapi
                     configurationBuilder.AddConfigServer(hostingEnvironment.EnvironmentName);
                 })
                 .UseStartup<Startup>()
-                //.UseUrls("http://localhost:7001/")
+                .UseUrls("http://localhost:7001/")
                 .Build();
     }
 }

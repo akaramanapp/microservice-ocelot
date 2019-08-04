@@ -19,9 +19,9 @@ namespace customerapi.Controllers
 
         private readonly FetcherOptions _opt;
 
-        public CustomerController(IConfiguration configuration, IOptions<FetcherOptions> opt)
+        public CustomerController(IConfiguration configuration, IOptions<FetcherOptions> opt, IUserApiClient api)
         {
-            //this._api = api;
+            this._api = api;
             this._config = configuration;
 
             this._opt = opt.Value;
@@ -30,9 +30,9 @@ namespace customerapi.Controllers
         // GET api/Customer
         //[Authorize]
         [HttpGet]
-        public  FetcherOptions GetAsync()
+        public async Task<List<User>> GetAsync()
         {
-            return _opt;
+            return await _api.GetUsersAsync();
         }
 
         // GET api/values/5

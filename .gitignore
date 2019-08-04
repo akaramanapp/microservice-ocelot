@@ -37,3 +37,7 @@ msbuild.wrn
 .vs/
 apigateway/obj/Debug
 apigateway/bin
+apigateway/bin/Debug/netcoreapp2.1/apigateway.pdb
+apigateway/bin/Debug/netcoreapp2.1/apigateway.dll
+apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
+apigateway/obj/apigateway.csproj.nuget.cache
