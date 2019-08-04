@@ -28,6 +28,8 @@ namespace customerapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IConfiguration>(Configuration);
+            services.Configure<FetcherOptions>(options => Configuration.Bind(options));
             services.AddHttpApiClient<IUserApiClient>(config =>
             {
                 config.HttpHost = new System.Uri(Configuration.GetValue<string>("user_service_url"));
@@ -78,6 +80,13 @@ namespace customerapi
             app.UseAuthentication();
             app.UseDiscoveryClient();
             app.UseMvc();
+        }
+
+        public class FetcherOptions
+        {
+            public string BaseDataUri { get; set; }
+
+            public TimeSpan FetchInterval { get; set; }
         }
     }
 }

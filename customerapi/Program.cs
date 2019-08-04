@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace customerapi
 {
@@ -14,11 +15,18 @@ namespace customerapi
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            BuildWebHost(args).Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .ConfigureAppConfiguration((webHostBuilderContext, configurationBuilder) => {
+                    
+                    var hostingEnvironment = webHostBuilderContext.HostingEnvironment;
+                    configurationBuilder.AddConfigServer(hostingEnvironment.EnvironmentName);
+                })
+                .UseStartup<Startup>()
+                //.UseUrls("http://localhost:7001/")
+                .Build();
     }
 }

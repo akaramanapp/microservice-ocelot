@@ -1,0 +1,15 @@
+server:
+  port: 8980
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+       git:
+        uri: https://github.com/akaramanapp/ConfigRepo
+    profiles:
+      active: native
+management:
+  security:
+    enabled: false

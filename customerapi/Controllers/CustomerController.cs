@@ -2,6 +2,10 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using static customerapi.Startup;
 
 namespace customerapi.Controllers
 {
@@ -11,16 +15,24 @@ namespace customerapi.Controllers
     {
         private readonly IUserApiClient _api;
 
-        public CustomerController(IUserApiClient api)
+        private readonly IConfiguration _config;
+
+        private readonly FetcherOptions _opt;
+
+        public CustomerController(IConfiguration configuration, IOptions<FetcherOptions> opt)
         {
-            this._api = api;
+            //this._api = api;
+            this._config = configuration;
+
+            this._opt = opt.Value;
+
         }
         // GET api/Customer
-        [Authorize]
+        //[Authorize]
         [HttpGet]
-        public async Task<List<User>> GetAsync()
+        public  FetcherOptions GetAsync()
         {
-            return await _api.GetUsersAsync();
+            return _opt;
         }
 
         // GET api/values/5
