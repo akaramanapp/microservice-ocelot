@@ -7,6 +7,7 @@ nupkg/
 
 # Visual Studio Code
 .vscode
+productapi/obj
 
 # Rider
 .idea
@@ -41,3 +42,49 @@ apigateway/bin/Debug/netcoreapp2.1/apigateway.pdb
 apigateway/bin/Debug/netcoreapp2.1/apigateway.dll
 apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
 apigateway/obj/apigateway.csproj.nuget.cache
+customerapi/bin/Debug/netcoreapp2.1/customerapi.dll
+apigateway/bin/Debug/netcoreapp2.1/apigateway.dll
+apigateway/bin/Debug/netcoreapp2.1/apigateway.pdb
+apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
+apigateway/obj/apigateway.csproj.nuget.cache
+apigateway/obj/project.assets.json
+apigateway/obj/Debug/netcoreapp2.1/apigateway.dll
+apigateway/obj/Debug/netcoreapp2.1/apigateway.pdb
+apigateway/obj/Debug/netcoreapp2.1/apigateway.assets.cache
+apigateway/obj/Debug/netcoreapp2.1/apigateway.csproj.CoreCompileInputs.cache
+apigateway/obj/Debug/netcoreapp2.1/apigateway.csprojAssemblyReference.cache
+customerapi/bin/Debug/netcoreapp2.1/customerapi.pdb
+customerapi/bin/Debug/netcoreapp2.1/customerapi.deps.json
+customerapi/obj/customerapi.csproj.nuget.cache
+customerapi/obj/project.assets.json
+customerapi/obj/Debug/netcoreapp2.1/customerapi.dll
+customerapi/obj/Debug/netcoreapp2.1/customerapi.pdb
+customerapi/obj/Debug/netcoreapp2.1/customerapi.assets.cache
+customerapi/obj/Debug/netcoreapp2.1/customerapi.csproj.CoreCompileInputs.cache
+customerapi/obj/Debug/netcoreapp2.1/customerapi.csprojAssemblyReference.cache
+authserver/obj/Debug/netcoreapp2.1/project.razor.json
+apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
+apigateway/bin/Debug/netcoreapp2.1/apigateway.dll
+apigateway/bin/Debug/netcoreapp2.1/apigateway.pdb
+apigateway/obj/apigateway.csproj.nuget.cache
+apigateway/obj/project.assets.json
+apigateway/obj/Debug/netcoreapp2.1/apigateway.assets.cache
+apigateway/obj/Debug/netcoreapp2.1/apigateway.csproj.CoreCompileInputs.cache
+apigateway/obj/Debug/netcoreapp2.1/apigateway.csprojAssemblyReference.cache
+apigateway/obj/Debug/netcoreapp2.1/apigateway.dll
+apigateway/obj/Debug/netcoreapp2.1/apigateway.pdb
+apigateway/obj/Debug/netcoreapp2.1/project.razor.json
+authserver/obj/Debug/netcoreapp2.1/netmicroservice.csprojAssemblyReference.cache
+customerapi/bin/Debug/netcoreapp2.1/customerapi.deps.json
+customerapi/bin/Debug/netcoreapp2.1/customerapi.dll
+customerapi/bin/Debug/netcoreapp2.1/customerapi.pdb
+customerapi/obj/customerapi.csproj.nuget.cache
+customerapi/obj/project.assets.json
+customerapi/obj/Debug/netcoreapp2.1/customerapi.assets.cache
+customerapi/obj/Debug/netcoreapp2.1/customerapi.csproj.CoreCompileInputs.cache
+customerapi/obj/Debug/netcoreapp2.1/customerapi.csprojAssemblyReference.cache
+customerapi/obj/Debug/netcoreapp2.1/customerapi.dll
+customerapi/obj/Debug/netcoreapp2.1/customerapi.pdb
+customerapi/obj/Debug/netcoreapp2.1/project.razor.json
+productapi/obj/Debug/netcoreapp2.1/project.razor.json
+apigateway/bin/Debug/netcoreapp2.1/apigateway.deps.json
